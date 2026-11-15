@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Find ReadGMSAPassword Privilege",
+        "category": "GMSA",
+        "query": "MATCH p=(u)-[:ReadGMSAPassword]->(t) RETURN p"
+    },
+    {
+        "name": "Search all objects containing 'gmsa'",
+        "category": "GMSA",
+        "query": "MATCH (n) WHERE toLower(n.name) CONTAINS \"gmsa\" RETURN n"
+    }
+]
